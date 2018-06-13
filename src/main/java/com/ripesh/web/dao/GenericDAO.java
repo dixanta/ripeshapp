@@ -5,10 +5,15 @@
  */
 package com.ripesh.web.dao;
 
+import java.util.List;
+
 /**
  *
  * @author USER
  */
 public interface GenericDAO<T> {
     void save(T model);
+    List<T> getAll();
+    T getById(int id);
+    boolean delete(int id);
 }
